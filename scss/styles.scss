@@ -1,12 +1,13 @@
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 @import url(https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css);
-// Import variables (overrides Bootstrap defaults)
-@import "./variables.scss";
 
+@import "./variables.scss"; //Import variables (overrides Bootstrap defaults)
 // Import Bootstrap
 @import "bootstrap/scss/bootstrap.scss";
 
-// Import custom styles
+/* Import custom styles */
+
+@import "./mixin.scss";
 @import "./global.scss";
 @import "./buttons.scss";
 @import "./form.scss";

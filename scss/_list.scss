@@ -43,7 +43,7 @@
             .title{
                 flex:1; align-self: center; overflow: hidden;
                 &>p{
-                    margin:0;font-size: 1rem; color:#222; @include text-overflow;
+                    margin:0;font-size: 1rem; color:#222; @include text-truncate;
                     & + small{margin-top:6px; line-height: 1.2;}
                 }
                 &>small{display: block; font-size: 15px; color:#aaa;}

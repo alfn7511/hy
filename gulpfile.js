@@ -101,12 +101,13 @@ function css() {
 function js() {
   return gulp
     .src(["./js/*.js", "!./js/*.min.js"])
-    .pipe(uglify())
     .pipe(
       header(banner, {
         pkg: pkg,
       })
     )
+    .pipe(gulp.dest("./dist/js"))
+    .pipe(uglify())
     .pipe(
       rename({
         suffix: ".min",
