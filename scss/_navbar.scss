@@ -1,0 +1,40 @@
+// Styling for the navbar
+.navbar {
+  padding:0; text-align: center; background-color: #fff;
+  .navbar-header{padding: 1.25rem 0; width:100%; background: $primary;}
+  .navbar-brand {padding:0; margin:0; width: 12.63rem; height:3rem; background: url(../images/logo-405x98-fff.png) no-repeat top center; background-size: 100% auto; text-indent: -99999999px;}
+  a[class*='ico-']{display: block; width: 3rem; height: 3rem;}
+  .ico-app{opacity: 1;}
+  .navbar-nav{
+    position: relative; width:calc(100% + 3rem); margin:0 -1.5rem; border-bottom:$border-width solid #abb5c0; overflow: hidden;
+    // border-left: $border-width solid #e9ecef; border-right: $border-width solid #e9ecef;
+    .nav-item{
+      display: flex; height: 4.938rem; flex-grow: 1; align-items: center; justify-content: center; border-right: $border-width solid #e9ecef; 
+      &:last-child{border-right:0;}
+      .nav-link{padding:0; color:#c4c4c4; font-size: 1.625rem; font-weight: bold;}
+      &.active{
+        position: relative; 
+        .nav-link{color:#00457c;}
+        &::after{position: absolute; left:-$border-width; bottom:-$border-width; width:calc(100% + 0.125rem); height:0.25rem; background: #004e8c; content: '';}
+
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .navbar{
+    padding: 0;
+    .navbar-header{padding: 0.6875rem 0;}
+    .navbar-brand { width: 15.38rem; height: 2.25rem; background: url(../images/logo-246x36-fff.png) no-repeat top center;}
+    a[class*='ico-']{width: 2.375rem; height: 2.375rem;}
+    .ico-app{opacity: 0;}
+    .navbar-nav{
+      width:100%; margin:0; border-left: $border-width solid #e9ecef; border-right: $border-width solid #e9ecef;
+      .nav-item{
+        height: 3.438rem;
+        .nav-link{font-size: 1rem;}
+      }
+    }
+  }
+}
