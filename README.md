@@ -7,7 +7,7 @@ gulp watch
 [Browsersync] Access URLs:
  --------------------------------------
        Local: http://localhost:3000
-    External: http://192.168.35.81:3000
+    External: http://xxx.xxx.xx.xx:3000
  --------------------------------------
           UI: http://localhost:3001
  UI External: http://localhost:3001
