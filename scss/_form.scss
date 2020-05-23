@@ -1,7 +1,10 @@
 textarea{resize: none;}
 .custom-file{ 
   height: 2rem;
-  .custom-file-input{height: 100%;}
+  .custom-file-input{
+    height: 100%;
+    &:focus ~ .custom-file-label{box-shadow: none;}
+  }
   .custom-file-label{
     margin:0; padding-right: 6.25rem; height: 100%; line-height: 2.875rem; border-radius: 0; border:0; color:#222; font-size: 1.063rem; white-space: nowrap;
     &::before{display: block; color:#bbb; content: '이미지나 문서파일을 올려주세요.';}
@@ -11,6 +14,20 @@ textarea{resize: none;}
       &::before{display: none;}
     }
   }
+}
+
+.input-group{
+  input.form-control, textarea.form-control{
+    & + .form-control-clear{
+      display: block; margin:10px 10px 0 0; width:30px; height: 30px; background: url(../images/btn-cancel-10x10.png) no-repeat center center; text-indent: -999999px;
+      &.hidden{display: none;}
+    }
+  }
+  input.form-control + .form-control-clear{margin:0 10px 0 0; align-self: center;}
+}
+
+.form-control:focus{
+  box-shadow: none;
 }
 
 

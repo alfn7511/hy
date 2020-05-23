@@ -9816,6 +9816,10 @@ textarea {
   height: 100%;
 }
 
+.custom-file .custom-file-input:focus ~ .custom-file-label {
+  box-shadow: none;
+}
+
 .custom-file .custom-file-label {
   margin: 0;
   padding-right: 6.25rem;
@@ -9852,6 +9856,28 @@ textarea {
 
 .custom-file .custom-file-label.on::before {
   display: none;
+}
+
+.input-group input.form-control + .form-control-clear, .input-group textarea.form-control + .form-control-clear {
+  display: block;
+  margin: 10px 10px 0 0;
+  width: 30px;
+  height: 30px;
+  background: url(../images/btn-cancel-10x10.png) no-repeat center center;
+  text-indent: -999999px;
+}
+
+.input-group input.form-control + .form-control-clear.hidden, .input-group textarea.form-control + .form-control-clear.hidden {
+  display: none;
+}
+
+.input-group input.form-control + .form-control-clear {
+  margin: 0 10px 0 0;
+  align-self: center;
+}
+
+.form-control:focus {
+  box-shadow: none;
 }
 
 .form-group {
