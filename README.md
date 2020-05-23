@@ -11,6 +11,6 @@ gulp watch
  --------------------------------------
 [Browsersync] Serving files from: ./dist
 
-
+https://getbootstrap.com/docs/4.5/
 
 완성본파일은 /dist 폴더에 있습니다.

@@ -41,39 +41,28 @@
 
   <div class="container-fluid">
     <div class="conts-wrap">
-        <!-- conts-lnb -->
-        <div class="btn-group conts-lnb"  role="group" aria-label="LNB MENU">
-          <a href="#" class="btn btn-lx active">접수하기</a>
-          <a href="#" class="btn btn-lx">접수내역</a>
-        </div>
-        <!-- conts-lnb //-->
-        <!-- 민원접수완료 -->
-        <div class="reg-finish">
-            <div class="reg-finish-wrap">
-                <img src="../images/ico-reg-finish.png" alt="민원접수가 완료되었습니다.">
-                <div class="desc">
-                    <p>민원접수가 <strong>완료</strong>되었습니다.</p>
-                    <span>민원처리가 시작되면 알려 드리겠습니다.</span>
-                </div>
-                
-                <button class="btn btn-xl btn-primary">접수내역 보기</button>
-            </div>
-        </div>
-        <!-- 민원접수완료 // -->
-
-        <!-- 민원취소 요청 -->
-        <div class="reg-finish">
-          <div class="reg-finish-wrap">
-              <img src="../images/ico-reg-finish.png" alt="민원취소 요청되었습니다.">
-              <div class="desc">
-                <p>민원취소 요청이 <strong>완료</strong>되었습니다.</p>
-                <span>민원취소가 완료되면 알려 드리겠습니다.</span>
-            </div>
-
-              <button class="btn btn-xl btn-primary">확인</button>
-          </div>
+      <!-- conts-lnb -->
+      <div class="btn-group conts-lnb"  role="group" aria-label="LNB MENU">
+        <a href="#" class="btn btn-lx">접수하기</a>
+        <a href="#" class="btn btn-lx active">접수내역</a>
       </div>
-      <!-- 민원취소 요청 // -->
+      <!-- conts-lnb //-->
+      
+    <form>
+      <!-- form-group -->
+      <div class="form-group">
+        <div class="input-group">
+          <textarea class="form-control" rows="5" aria-label="취소사유" aria-describedby="취소사유를 간략하게 입력해주세요." placeholder="취소사유를 간략하게 입력해주세요."></textarea>
+        </div>
+      </div>
+      <!-- form-group //-->
+      <!-- btn-bottom -->
+      <div class="btn-group btn-bottom">
+        <button class="btn btn-xl btn-primary">접수취소</button>
+        <button class="btn btn-xl btn-light">취소하기</button>
+      </div>
+      <!-- btn-bottom -->
+    </form>
 
     </div>
   </div>

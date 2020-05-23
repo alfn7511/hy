@@ -10,6 +10,8 @@
 .ico-app{background: url(../images/ico-app-96x96.png) no-repeat top center; background-size: 100% 100%; text-indent: -99999999px;}
 .ico-my{background: url(../images/ico-my-96x96.png) no-repeat top center; background-size: 100% 100%; text-indent: -99999999px;}
 
+.img-nothing{width:57px;}
+
 @mixin center-middle{
   // display: -webkit-box;
   // display: -webkit-flex;
@@ -24,4 +26,27 @@
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+@mixin left-middle{
+  // display: -webkit-box;
+  // display: -webkit-flex;
+  // display: -ms-flexbox;
+  // display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 1rem;
+}
+
+
+@mixin text-overflow() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+a:hover{
+  text-decoration: none;
 }

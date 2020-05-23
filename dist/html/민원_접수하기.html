@@ -9,7 +9,7 @@
   <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   -->
   <!-- Custom styles for this template -->
-  <link href="../css/styles.min.css" rel="stylesheet">
+  <link href="../css/styles.css" rel="stylesheet">
 </head>
 <body>
   <!-- gnb -->
@@ -24,7 +24,7 @@
     <div class="container-fluid">
       <ul class="navbar-nav flex-row">
         <li class="nav-item active">
-          <a href="#" class="nav-link">민원접수<span class="sr-only">(current)</span></a>
+          <a href="#" class="nav-link">민원접수</a>
         </li>
         <li class="nav-item">
           <a href="#" class="nav-link">제안접수</a>
@@ -41,13 +41,16 @@
 
   <div class="container-fluid">
     <div class="conts-wrap">
+      <!-- conts-lnb -->
       <div class="btn-group conts-lnb"  role="group" aria-label="LNB MENU">
         <a href="#" class="btn btn-lx active">접수하기</a>
         <a href="#" class="btn btn-lx">접수내역</a>
       </div>
-      <form>
+      <!-- conts-lnb //-->
+      
+    <form>
+      <!-- form-group -->
       <div class="form-group">
-        
         <div class="input-group">
           <input type="text" class="form-control" aria-label="이름" aria-describedby="이름을 입력하세요." placeholder="이름">
         </div>
@@ -91,18 +94,21 @@
         </div>
         <div class="input-group">
           <div class="custom-file">
-            <input type="file" class="custom-file-input" id="inputGroupFile01" aria-label="파일업로드" aria-describedby="이미지나 문서파일을 올려주세요." placeholder="이미지나 문서파일을 올려주세요.">
-            <label class="custom-file-label" for="inputGroupFile01">파일선택</label>
+            <input type="file" class="custom-file-input" id="inputGroupFile01" aria-label="파일업로드" aria-describedby="이미지나 문서파일을 올려주세요.">
+            <label class="custom-file-label" for="inputGroupFile01"></label>
+            
           </div>
         </div>
       </div>
-
+      <!-- form-group //-->
+      <!-- btn-bottom -->
       <div class="btn-group btn-bottom">
         <button class="btn btn-xl btn-primary">민원접수</button>
         <button class="btn btn-xl btn-light">취소하기</button>
       </div>
-
+      <!-- btn-bottom -->
     </form>
+
     </div>
   </div>
   <!-- footer -->
