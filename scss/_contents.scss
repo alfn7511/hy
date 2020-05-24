@@ -43,7 +43,7 @@
 
 .badge{
   width:57px; height: 38px; border-radius: $border-radius; font-size: 14px; color:#222; font-weight: normal; background: #fbd661;
-  display: flex; @include center-middle;
+  display: inline-flex; @include center-middle;
 }
 .badge-reg{color:#222; background: #fbd661;}
 .badge-finish{color:#fff; background: #bacbce;}

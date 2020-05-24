@@ -9,7 +9,7 @@
   <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   -->
   <!-- Custom styles for this template -->
-  <link href="../css/styles.min.css" rel="stylesheet">
+  <link href="../css/styles.css" rel="stylesheet">
 </head>
 <body>
   <!-- gnb -->
@@ -23,10 +23,10 @@
     </div>
     <div class="container-fluid">
       <ul class="navbar-nav flex-row">
-        <li class="nav-item active">
+        <li class="nav-item">
           <a href="#" class="nav-link">민원접수</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item active">
           <a href="#" class="nav-link">제안접수</a>
         </li>
         <li class="nav-item">
@@ -43,26 +43,39 @@
     <div class="conts-wrap">
       <!-- conts-lnb -->
       <div class="btn-group conts-lnb"  role="group" aria-label="LNB MENU">
-        <a href="#" class="btn btn-lx">접수하기</a>
-        <a href="#" class="btn btn-lx active">접수내역</a>
+        <a href="#" class="btn btn-lx active">접수하기</a>
+        <a href="#" class="btn btn-lx">접수내역</a>
       </div>
       <!-- conts-lnb //-->
       
     <form>
       <!-- form-group -->
       <div class="form-group">
-        <div class="head d-flex justify-content-between">
-          <span class="badge badge-reg">접수</span>
-          <span class="date">2020-04-16 10:12</span>
+        <div class="input-group">
+          <input type="text" class="form-control" aria-label="이름" aria-describedby="이름을 입력하세요." placeholder="이름">
         </div>
         <div class="input-group">
-          <textarea class="form-control" rows="10" aria-label="취소사유" aria-describedby="취소사유를 간략하게 입력해주세요." placeholder="취소사유를 간략하게 입력해주세요."></textarea>
+          <input type="text" class="form-control" aria-label="이메일" aria-describedby="이메일을 입력하세요." placeholder="이메일">
+        </div>
+        <div class="input-group">
+          <input type="text" class="form-control" aria-label="휴대전화" aria-describedby="휴대전화을 입력하세요." placeholder="휴대전화">
+        </div>
+        <div class="input-group">
+          <textarea class="form-control" rows="5" aria-label="제안내용" aria-describedby="제안내용을 입력하세요." placeholder="제안내용을 입력하세요."></textarea>
+          <a href="#" class="form-control-clear hidden">취소</a>
+        </div>
+        <div class="input-group">
+          <div class="custom-file">
+            <input type="file" class="custom-file-input" id="inputGroupFile01" aria-label="파일업로드" aria-describedby="이미지나 문서파일을 올려주세요.">
+            <label class="custom-file-label" for="inputGroupFile01"></label>
+            
+          </div>
         </div>
       </div>
       <!-- form-group //-->
       <!-- btn-bottom -->
       <div class="btn-group btn-bottom">
-        <button class="btn btn-xl btn-primary">접수취소</button>
+        <button class="btn btn-xl btn-primary">제안접수</button>
         <button class="btn btn-xl btn-light">취소하기</button>
       </div>
       <!-- btn-bottom -->
