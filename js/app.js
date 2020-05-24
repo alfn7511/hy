@@ -1,10 +1,24 @@
+$(document).on("click", "a", function (e){
+	e.preventDefault();
+});
+
+$(document).on("click", ".mypage-box .ico-my", function (){
+	var my = $(".mypage-box .my-dropdown");
+	if(my.hasClass("show")){
+		my.removeClass("show");
+	}else{
+		my.addClass("show");
+	}
+});
+$(document).on("click", ".mypage-box .my-dropdown .btn-close", function (){
+	$(".mypage-box .my-dropdown").removeClass("show");
+});
+
 $(document).ready(function(){	
-	$(document).on("click", "a", function (e){
-		e.preventDefault();
-	});
-	uiCheckCtrl();
 	uiFileCtrl();
 });
+
+uiCheckCtrl();
 
 function uiCheckCtrl(){
 	

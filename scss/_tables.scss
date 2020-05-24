@@ -19,3 +19,17 @@
     }
     & + .btn-bottom{margin-bottom:60px;}
 }
+
+@include media-breakpoint-up(md) {
+    .tbl-type1{
+        margin:30px 0;
+        .table{
+            tbody{
+                tr{
+                    th, td{font-size: 13px;}
+                }
+            }
+        }
+    }
+    
+}

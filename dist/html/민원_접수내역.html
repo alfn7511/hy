@@ -14,7 +14,24 @@
       <div class="container-fluid">
         <a href="#" class="ico-app">알림</a>
         <a class="navbar-brand" href="#">한양대학교 스마트 종합상황실</a>
-        <a href="#" class="ico-my">마이페이지</a>
+               <!-- mypage-box -->
+        <div class="mypage-box">
+          <a href="#" class="ico-my">마이페이지</a>
+          <!-- my-dropdown -->
+          <div class="my-dropdown">
+            <a href="#" class="btn-close">닫기</a>
+            <div class="user">
+              <p><strong>박민수</strong>님</p>
+              <p>park2020@hanyang.ac.kr</p>
+            </div>
+            <div class="btn-group-sm">
+              <button class="btn btn-outline-light">로그아웃</button>
+              <button class="btn btn-outline-light">마이페이지</button>
+            </div>
+          </div>
+          <!-- my-dropdown -->
+        </div>
+        <!-- mypage-box -->
       </div>
     </div>
     <div class="container-fluid">
@@ -131,28 +148,22 @@
         <!-- list-group // -->
       </div>
       <!-- list-group-type1 -->
+
       <!-- Pagination -->
       <div class="btn-m-paging">더보기</div>
-
-      <nav aria-label="Page navigation example">
-        <ul class="pagination justify-content-center">
-          <li class="page-item">
-            <a class="page-link" href="#" aria-label="Previous">
-              <span aria-hidden="true">&laquo;</span>
-            </a>
-          </li>
-          <li class="page-item"><a class="page-link" href="#">1</a></li>
-          <li class="page-item"><a class="page-link" href="#">2</a></li>
-          <li class="page-item"><a class="page-link" href="#">3</a></li>
-          <li class="page-item">
-            <a class="page-link" href="#" aria-label="Next">
-              <span aria-hidden="true">&raquo;</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-
+      <ul class="pagination">
+        <li class="page-item"><a class="page-link page-first" href="#" aria-label="First"></a></li>
+        <li class="page-item"><a class="page-link page-prev" href="#" aria-label="Previous"></a></li>
+        <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">4</a></li>
+        <li class="page-item"><a class="page-link" href="#">5</a></li>
+        <li class="page-item"><a class="page-link page-next" href="#" aria-label="Next"></a></li>
+        <li class="page-item"><a class="page-link page-end" href="#" aria-label="End"></a></li>
+      </ul>
       <!-- Pagination -->
+
     </div>
   </div>
   <!-- footer -->

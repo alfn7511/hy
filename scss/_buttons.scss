@@ -24,3 +24,7 @@
 .btn-kakao{color: #fff;background-color: #ffd800;border-color: #ffd800;}
 .btn-google{color: #fff;background-color: #e0574e;border-color: #e0574e;}
 .btn-facebook{color: #fff;background-color: #4468af;border-color: #4468af;}
+
+@include media-breakpoint-up(md) {
+  .btn-xl{font-size: 0.875rem;}
+}
