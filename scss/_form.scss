@@ -35,7 +35,8 @@ textarea{resize: none;}
     position: relative; margin:1.875rem 0; width:100%; border:1px solid #ccc; background-color: #fff; text-align: left; font-family: $sub-font-family;
     .head{
       position: relative; padding:10px 12px; width:100%; height: 60px; border-bottom:1px solid #e9e9e9;
-      .date{align-self: center; color:#222; font-size: 14px; }
+      .badge, .date{ color:#222; font-size: 17px; }
+      .date{align-self: center;}
     }
     & + .btn-bottom{margin-bottom:60px;}
     .input-group{

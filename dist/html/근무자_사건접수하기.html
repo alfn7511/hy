@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>한양대학교 스마트 종합상황실</title>
+  <link href="../css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <!-- gnb -->
+  <nav class="navbar flex-column">
+
+    <!-- navbar-header -->
+    <div class="navbar-header">
+      <div class="container-fluid">
+        <a href="#" class="ico-app">알림</a>
+        <a class="navbar-brand" href="#">한양대학교 스마트 종합상황실</a>
+        <a href="#" class="ico-my">마이페이지</a>
+      </div>
+    </div>
+    <!-- navbar-header // -->
+
+    <!-- 근무자 -->
+    <div class="container-fluid">
+        <ul class="navbar-nav flex-row">
+          <li class="nav-item">
+            <a href="#" class="nav-link">민원 콜<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">민원내역</a>
+          </li>
+          <li class="nav-item active">
+            <a href="#" class="nav-link">신고접수</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">근무자 공지</a>
+          </li>
+        </ul>
+      </div>
+      <!-- 근무자 -->
+
+  </nav>
+  <!-- gnb // -->
+
+
+  <!-- navbar-status -->
+  <div class="navbar-status">
+    <div class="container-fluid h-100">
+      <div class="d-flex justify-content-between h-100">
+        <p class="d-flex align-items-center"><strong>근무중</strong>(01:00:00)</p>
+        <button class="btn btn-outline-light">근무종료</button>
+      </div>
+    </div>
+  </div>      
+  <!-- navbar-status -->  
+
+  <div class="container-fluid">
+    <div class="conts-wrap">
+      
+    <form>
+      <!-- form-group -->
+      <div class="form-group">
+        <div class="input-group">
+          <input type="text" class="form-control" aria-label="이름" aria-describedby="이름을 입력하세요." placeholder="이름">
+        </div>
+        <div class="input-group">
+          <input type="text" class="form-control" aria-label="이메일" aria-describedby="이메일을 입력하세요." placeholder="이메일">
+        </div>
+        <div class="input-group">
+          <input type="text" class="form-control" aria-label="휴대전화" aria-describedby="휴대전화을 입력하세요." placeholder="휴대전화">
+        </div>
+        <div class="input-group">          
+            <div class="btn-group btn-group-toggle d-flex flex-wrap">
+              <label class="btn active"><input type="radio" name="options" class="radio" checked> 세콤</label>
+              <label class="btn"><input type="radio" name="options" class="radio"> 옥상개방</label>
+              <label class="btn"><input type="radio" name="options" class="radio"> 공사</label>
+              <label class="btn"><input type="radio" name="options" class="radio"> 행사</label>
+              <label class="btn"><input type="radio" name="options" class="radio"> VIP</label>
+              <label class="btn"><input type="radio" name="options" class="radio"> 도난</label>
+              <label class="btn"><input type="radio" name="options" class="radio"> 기타</label>
+              <label class="btn empty"></label>
+            </div>
+          </div>
+  
+          <div class="input-group">
+            <div class="btn-group btn-group-toggle d-flex flex-wrap">
+              <label class="btn active"><input type="radio" name="options1" class="radio" checked> 공학대학</label>
+              <label class="btn"><input type="radio" name="options1" class="radio"> 국제관</label>
+              <label class="btn"><input type="radio" name="options1" class="radio"> 의과대학</label>
+              <label class="btn"><input type="radio" name="options1" class="radio"> 사범대학</label>
+              <label class="btn"><input type="radio" name="options1" class="radio"> 인문관</label>
+              <label class="btn"><input type="radio" name="options1" class="radio"> 기타</label>
+              <label class="btn empty"></label>
+              <label class="btn empty"></label>
+            </div>
+          </div>    
+          <div class="input-group">
+            <input type="text" class="form-control" aria-label="상세위치" aria-describedby="상세위치을 입력하세요." placeholder="상세위치">
+            <a href="#" class="form-control-clear hidden">취소</a>
+          </div>    
+        <div class="input-group">
+          <textarea class="form-control" rows="5" aria-label="민원내용" aria-describedby="민원내용을 입력해주세요." placeholder="민원내용을 입력하세요."></textarea>
+          <a href="#" class="form-control-clear hidden">취소</a>
+        </div>
+        <div class="input-group">
+          <div class="custom-file">
+            <input type="file" class="custom-file-input" id="inputGroupFile01" aria-label="파일업로드" aria-describedby="이미지나 문서파일을 올려주세요.">
+            <label class="custom-file-label" for="inputGroupFile01"></label>
+            
+          </div>
+        </div>
+      </div>
+      <!-- form-group //-->
+      <!-- btn-bottom -->
+      <div class="btn-group btn-bottom">
+        <button class="btn btn-xl btn-primary">신고접수</button>
+        <button class="btn btn-xl btn-light">취소하기</button>
+      </div>
+      <!-- btn-bottom -->
+    </form>
+
+    </div>
+  </div>
+  <!-- footer -->
+  <footer class="footer d-flex">
+    <div class="container-fluid">
+      <div class="copyright">ⓒ 2020 Hanyang University. All Rights Reserved.</div>
+      <ul class="nav nav-pills">
+        <li role="presentation"><a href="#">이용약관</a></li>
+        <li role="presentation"><a href="#">개인정보처리방침</a></li>
+      </ul>
+    </div>
+  </footer>
+  <!-- footer // -->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/app.min.js"></script>
+</body>
+</html>

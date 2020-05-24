@@ -10,6 +10,7 @@
 <body>
   <!-- gnb -->
   <nav class="navbar flex-column">
+    <!-- navbar-header -->
     <div class="navbar-header">
       <div class="container-fluid">
         <a href="#" class="ico-app">알림</a>
@@ -17,32 +18,60 @@
         <a href="#" class="ico-my">마이페이지</a>
       </div>
     </div>
+    
+    <!-- 근무자 -->
     <div class="container-fluid">
       <ul class="navbar-nav flex-row">
+        <li class="nav-item">
+          <a href="#" class="nav-link">민원 콜<span class="sr-only">(current)</span></a>
+        </li>
         <li class="nav-item active">
-          <a href="#" class="nav-link">민원접수</a>
+          <a href="#" class="nav-link">민원내역</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">제안접수</a>
+          <a href="#" class="nav-link">신고접수</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">공지사항</a>
+          <a href="#" class="nav-link">근무자 공지</a>
         </li>
       </ul>
     </div>
-  </div>
-    </div>    
+    <!-- 근무자 -->
   </nav>
   <!-- gnb // -->
 
-  <div class="container-fluid">
-    <div class="conts-wrap">
-      <!-- conts-lnb -->
-      <div class="btn-group conts-lnb"  role="group" aria-label="LNB MENU">
-        <a href="#" class="btn btn-lx">접수하기</a>
-        <a href="#" class="btn btn-lx active">접수내역</a>
+  <!-- navbar-status -->
+  <div class="navbar-status">
+    <div class="container-fluid h-100">
+      <div class="d-flex justify-content-between h-100">
+        <p class="d-flex align-items-center"><strong>근무중</strong>(01:00:00)</p>
+        <button class="btn btn-outline-light">근무종료</button>
       </div>
-      <!-- conts-lnb //-->
+    </div>
+  </div>      
+  <!-- navbar-status -->
+
+
+  <div class="container-fluid">
+    <div class="conts-wrap">     
+    
+      <!-- list-commt -->
+      <div class="list-commt">
+        <div class="box-type1">
+          <p>
+              [최관리자] 민원인이 기다리고 있으니 빠른 출동 바랍니다. <br>
+              [김근무자] 추가 인원요청 <br>
+              [최관리자] 추가 됐습니다.
+          </p>
+        </div>
+      </div> 
+      <!-- list-commt // -->
+      <!-- list-inquiry -->
+      <div class="list-inquiry">
+        <p class="text-truncate">C-1구역 순찰 (이진호) <span>배정일시 : 2020-04-15 12:10</span></p>
+        <p class="text-truncate">[나] C-1구역 순찰 (조영민)<span>배정일시 : 2020-04-15 12:10</span></p>
+      </div>
+      <!-- list-inquiry // -->
       <!-- tbl-type1 -->
       <div class="tbl-type1">
         <table class="table">
@@ -96,12 +125,10 @@
       <!-- btn-bottom -->
       <div class="btn-group btn-bottom">
         <button class="btn btn-xl btn-primary">목록보기</button>
-        <button class="btn btn-xl btn-light">수정하기</button>
-        <button class="btn btn-xl btn-cancel">접수취소</button>
+        <button class="btn btn-xl btn-light">문의하기</button>
       </div>
-      <!-- btn-bottom //-->
+      <!-- btn-bottom //-->      
 
-    </form>
     </div>
   </div>
   <!-- footer -->

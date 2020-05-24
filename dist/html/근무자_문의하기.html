@@ -18,29 +18,14 @@
         <a href="#" class="ico-my">마이페이지</a>
       </div>
     </div>
-    <!-- navbar-header -->
-    <!-- 민원인 -->
-    <div class="container-fluid">
-      <ul class="navbar-nav flex-row">
-        <li class="nav-item active">
-          <a href="#" class="nav-link">민원접수<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">제안접수</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">공지사항</a>
-        </li>
-      </ul>
-    </div>
-    <!-- 민원인 // -->
+    
     <!-- 근무자 -->
     <div class="container-fluid">
       <ul class="navbar-nav flex-row">
-        <li class="nav-item active">
+        <li class="nav-item">
           <a href="#" class="nav-link">민원 콜<span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item active">
           <a href="#" class="nav-link">민원내역</a>
         </li>
         <li class="nav-item">
@@ -59,22 +44,51 @@
   <div class="navbar-status">
     <div class="container-fluid h-100">
       <div class="d-flex justify-content-between h-100">
-        <p class="d-flex align-items-center"><strong>근무중</strong> (01:00:00)</p>
+        <p class="d-flex align-items-center"><strong>근무중</strong>(01:00:00)</p>
         <button class="btn btn-outline-light">근무종료</button>
       </div>
     </div>
   </div>      
   <!-- navbar-status -->
 
-  <!-- conts-wrap -->
+
   <div class="container-fluid">
-    <div class="conts-wrap">      
-      내용
+    <div class="conts-wrap">     
+    
+      <!-- list-commt -->
+      <div class="list-commt">
+        <div class="box-type1">
+          <p>
+              [최관리자] 민원인이 기다리고 있으니 빠른 출동 바랍니다. <br>
+              [김근무자] 추가 인원요청 <br>
+              [최관리자] 추가 됐습니다.
+          </p>
+        </div>
+      </div> 
+      <!-- list-commt // -->
+
+      <form>
+        <!-- form-group -->
+        <div class="form-group">
+          <div class="head d-flex justify-content-between">
+            <span class="badge badge-reg">접수</span>
+            <span class="date">2020-04-16 10:12</span>
+          </div>
+          <div class="input-group">
+            <textarea class="form-control" rows="15" aria-label="문의하기" aria-describedby="문의하실 내용을 입력해주세요." placeholder="문의하실 내용을 입력해주세요."></textarea>
+          </div>
+        </div>
+        <!-- form-group //-->
+        <!-- btn-bottom -->
+        <div class="btn-group btn-bottom">
+          <button class="btn btn-xl btn-primary">문의하기</button>
+          <button class="btn btn-xl btn-light">취소하기</button>
+        </div>
+        <!-- btn-bottom -->
+      </form>      
+
     </div>
   </div>
-  <!-- conts-wrap //-->
-
-
   <!-- footer -->
   <footer class="footer d-flex">
     <div class="container-fluid">
