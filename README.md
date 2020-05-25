@@ -14,3 +14,12 @@ gulp watch
 https://getbootstrap.com/docs/4.5/
 
 완성본파일은 /dist 폴더에 있습니다.
+
+/dist/worklist/는 퍼블리싱 작업목록 소스파일입니다.
+
+/dist/css
+/dist/html
+/dist/images
+/dist/js
+/dist/vendor
+위 5개폴더가 실제 소스파일입니다.
