@@ -3,7 +3,7 @@
 
 npm install
 
-gulp watch Or ./node_modules/gulp/bin/gulp.js watch
+gulp watch  OR  ./node_modules/gulp/bin/gulp.js watch
 
 [Browsersync] Access URLs:
  --------------------------------------
